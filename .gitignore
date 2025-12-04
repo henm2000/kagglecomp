@@ -1,2 +1,7 @@
 __pycache__/
 *.pyc
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea
+.ipynb_checkpoints/
