@@ -5,3 +5,4 @@ Desktop.ini
 .vscode/
 .idea
 .ipynb_checkpoints/
+*.pt
