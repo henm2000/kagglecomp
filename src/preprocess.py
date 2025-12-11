@@ -29,3 +29,18 @@ def build_text_column(df):
 
     df["text"] = q + " " + a + " " + e
     return df
+
+
+def build_text_columns_bert(df):
+    """
+    Builds the combined 'text' column for transformer models (DeBERTa / BERT / RoBERTa).
+    No cleaning is applied — transformers should receive raw text.
+    """
+    df["Misconception"] = df["Misconception"].fillna("NA").astype(str)
+
+    q = df["QuestionText"].fillna("").astype(str)
+    a = df["MC_Answer"].fillna("").astype(str)
+    e = df["StudentExplanation"].fillna("").astype(str)
+
+    df["text"] = (q + " " + a + " " + e).str.strip()
+    return df    
