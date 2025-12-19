@@ -17,46 +17,6 @@ test = build_text_column(test)
 # ===============================
 tfidf_cat = load("models/tfidf/tfidf_category.pkl")
 clf_cat   = load("models/tfidf/clf_category.pkl")
-test["Misconception"] = "NA"   # placeholder for consistency
-
-# Build the text column (must match training EXACTLY)
-test = build_text_column(test)
-
-# ===============================
-# 2. Load trained models
-# ===============================
-tfidf_cat = load("models/tfidf/tfidf_category.pkl")
-clf_cat   = load("models/tfidf/clf_category.pkl")
-test["Misconception"] = "NA"   # placeholder for consistency
-
-# Build the text column (must match training EXACTLY)
-test = build_text_column(test)
-
-# ===============================
-# 2. Load trained models
-# ===============================
-tfidf_cat = load("models/tfidf/tfidf_category.pkl")
-clf_cat   = load("models/tfidf/clf_category.pkl")
-test["Misconception"] = "NA"   # placeholder for consistency
-
-# Build the text column (must match training EXACTLY)
-test = build_text_column(test)
-
-# ===============================
-# 2. Load trained models
-# ===============================
-tfidf_cat = load("models/tfidf/tfidf_category.pkl")
-clf_cat   = load("models/tfidf/clf_category.pkl")
-test["Misconception"] = "NA"   # placeholder for consistency
-
-# Build the text column (must match training EXACTLY)
-test = build_text_column(test)
-
-# ===============================
-# 2. Load trained models
-# ===============================
-tfidf_cat = load("models/tfidf/tfidf_category.pkl")
-clf_cat   = load("models/tfidf/clf_category.pkl")
 
 tfidf_mis = load("models/tfidf/tfidf_misconception.pkl")
 clf_mis   = load("models/tfidf/clf_misconception.pkl")
